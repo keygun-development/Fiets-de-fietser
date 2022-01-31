@@ -30,6 +30,14 @@
       "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
     },
     {
+      "type":"composer",
+      "url":"https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
+    },
+    {
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
