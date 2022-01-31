@@ -87,9 +87,9 @@ abstract class Proa_Post_Abstract extends Proa_Object implements Proa_API_Object
     }
 
     /**
-     * @return WP_Post
+     * @return object
      */
-    public function getPost(): WP_Post
+    public function getPost(): object
     {
         return $this->getWPObject();
     }
