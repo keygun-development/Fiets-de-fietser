@@ -6,7 +6,9 @@ web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 web/app/cache/*
-web/app/themes/fdf/node_modules
+web/app/themes/storefront
+web/app/themes/storefront-child/node_modules
+web/app/languages
 
 # WordPress
 web/wp
