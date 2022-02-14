@@ -65,7 +65,24 @@ if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin()
 	require 'inc/nux/class-storefront-nux-starter-content.php';
 }
 
+function EnqueueStyles() {
+    wp_enqueue_style('index', get_bloginfo('url').'/app/themes/storefront-child/public/styles/index.css');
+}
+
+add_action('init', 'EnqueueStyles');
+
 /**
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
  * https://github.com/woocommerce/theme-customisations
  */
+
+function findProductCategoryByName($amount = 0, $category): WP_Query
+{
+    $args = array(
+        'post_type'      => 'product',
+        'posts_per_page' => $amount,
+        'product_cat'    => $category
+    );
+
+    return new WP_Query($args);
+}

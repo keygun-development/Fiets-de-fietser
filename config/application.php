@@ -53,6 +53,12 @@ define('WP_ENV', env('WP_ENV') ?: 'production');
  */
 Config::define('WP_HOME', env('WP_HOME'));
 Config::define('WP_SITEURL', env('WP_SITEURL'));
+Config::define('JETPACK_DEV_DEBUG', true);
+Config::define('CLIENT_ID', 78502);
+Config::define('CLIENT_SECRET', '13OGFxPlviMdo8J65bTQVKTjHftL3U2wCtzeZPlTSsepKcFeUM4cwxJxpXb6sudu');
+Config::define('REDIRECT_URL', 'https://fdf.dev/');
+Config::define('REQUEST_TOKEN_URL', 'https://public-api.wordpress.com/oauth2/token');
+Config::define('AUTHENTICATE_URL', 'https://public-api.wordpress.com/oauth2/authenticate');
 
 /**
  * Custom Content Directory

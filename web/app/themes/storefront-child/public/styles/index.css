@@ -424,3 +424,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.my-4 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+.flex {
+  display: flex !important;
+}
+.w-full {
+  width: 100% !important;
+}
+.justify-between {
+  justify-content: space-between !important;
+}
+.bg-gray-300 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(223 223 223 / var(--tw-bg-opacity)) !important;
+}
+.py-12 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-2xl {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
+.font-bold {
+  font-weight: 700 !important;
+}
+.text-black {
+  --tw-text-opacity: 1 !important;
+  color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
+}

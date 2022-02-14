@@ -1,7 +1,7 @@
 module.exports = {
   important: true,
   content: [
-    './resources/views/**/*.blade.php',
+    '*.php',
   ],
   presets: [],
   theme: {
